@@ -1,0 +1,85 @@
+
+start of argv:	0xf6fff264
+
+	OLDPWD=/
+
+
+
+melinda $eax $0x8048533
+
+
+
+repeating instructions:
+
+0x80483f0
+
+   0x080483f0 <+0>:     jmp    *0x8049948
+   0x080483f6 <+6>:     push   $0x28
+   0x080483fb <+11>:    jmp    0x8048390
+
+   0x08048536 <+114>:   call   0x80483f0 <memset@plt>
+   0x0804853b <+119>:   addl   $0x1,0x228(%esp)
+   0x08048543 <+127>:   mov    0x228(%esp),%eax
+   0x0804854a <+134>:   shl    $0x2,%eax
+   0x0804854d <+137>:   add    0x10(%ebp),%eax
+   0x08048550 <+140>:   mov    (%eax),%eax
+   0x08048552 <+142>:   test   %eax,%eax
+   0x08048554 <+144>:   jne    0x80484eb <main+39>
+
+   0x080484eb <+39>:    mov    0x228(%esp),%eax
+   0x080484f2 <+46>:    shl    $0x2,%eax
+   0x080484f5 <+49>:    add    0x10(%ebp),%eax
+   0x080484f8 <+52>:    mov    (%eax),%eax
+   0x080484fa <+54>:    movl   $0xffffffff,0x1c(%esp)
+   0x08048502 <+62>:    mov    %eax,%edx
+   0x08048504 <+64>:    mov    $0x0,%eax
+   0x08048509 <+69>:    mov    0x1c(%esp),%ecx
+   0x0804850d <+73>:    mov    %edx,%edi
+   0x0804850f <+75>:    repnz scas %es:(%edi),%al
+   0x08048511 <+77>:    mov    %ecx,%eax
+   0x08048513 <+79>:    not    %eax
+   0x08048515 <+81>:    lea    -0x1(%eax),%edx
+   0x08048518 <+84>:    mov    0x228(%esp),%eax
+   0x0804851f <+91>:    shl    $0x2,%eax
+   0x08048522 <+94>:    add    0x10(%ebp),%eax
+   0x08048525 <+97>:    mov    (%eax),%eax
+   0x08048527 <+99>:    mov    %edx,0x8(%esp)
+   0x0804852b <+103>:   movl   $0x0,0x4(%esp)
+   0x08048533 <+111>:   mov    %eax,(%esp)
+   0x08048536 <+114>:   call   0x80483f0 <memset@plt>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

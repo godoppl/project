@@ -1,0 +1,13 @@
+Check for PID file in /tmp/$PID
+
+111 0x80485f8 cmpl $0x0,0x20(%esp)
+112 0x80485fd jne 0x804860d
+
+
+melinda:
+        linux-gate.so.1 =>  (0xf7ffd000)
+        libc.so.6 => /lib32/libc.so.6 (0xf7e4d000)
+        /lib/ld-linux.so.2 (0x56555000)
+
+
+

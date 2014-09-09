@@ -1,0 +1,31 @@
+#!/usr/bin/python
+#
+# ssh for over the wire wargames
+import os
+import sys
+from os.path import exists
+
+
+level = os.getcwd()[25:].replace("/", "")
+
+if exists("pwd") == False:
+	print "no password file in this directory!"
+	sys.exit()
+
+if len(sys.argv) > 1:
+	arg = sys.argv[1]
+else:
+	print "no argument was specified, quitting" 
+        sys.exit()
+
+if arg != "scp" and arg != "ssh":
+        print "Please use ssh or scp as arguments only."
+	sys.exit()
+
+if arg == "scp":
+	os.system("sshpass -f pwd scp " + level + "@" + level[:len(level)-1] + ".labs.overthewire.org:/" +  level[:len(level)-1] + "/" + level + "* .")
+
+if arg == "ssh":
+	os.system("sshpass -f pwd ssh " + level + "@" + level[:len(level)-1] + ".labs.overthewire.org")
+
+

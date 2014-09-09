@@ -1,0 +1,1 @@
+python -c'import struct;q=lambda x:struct.pack("I", x); print q(0x46454542)
