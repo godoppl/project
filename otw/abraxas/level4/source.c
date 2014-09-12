@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define UID 1005
-#define PASS "AAAAA\n" // To be determined
+#define PASS "xxx" // To be determined
 
 struct pwd {
     char user[10];
@@ -31,7 +31,6 @@ void auth(struct pwd *u) {
 
     sleep(1);
     if(!strncmp(u->pass, PASS, sizeof(pass))) {
-	u->uid = UID;
         printf("You are now authenticated !\n");
     } else {
         printf("Authentication failed !\n");
@@ -55,7 +54,7 @@ void logout() {
 
 int menu() {
     char line[10];
-	
+
     printf("\n");
     printf("Menu\n");
     printf("====\n\n");
